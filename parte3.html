@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Solicitar al usuario ingresar el monto total de su compra
+        let monto = parseFloat(prompt("Ingresa el monto total de tu compra:"));
+
+        // Verificar si el monto es mayor a 100 y aplicar el descuento
+        if (monto > 100) {
+            let descuento = monto * 0.10;
+            let montoFinal = monto - descuento;
+            console.log(`El monto final a pagar es: ${montoFinal} (descuento aplicado: ${descuento})`);
+        } else {
+            console.log(`El monto final a pagar es: ${monto}`);
+        }
+    </script>
+</body>
+</html>
